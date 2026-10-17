@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller 2 - Eventos JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Taller 2 - Eventos JavaScript</h1>
+  <p>Programación Web 1</p>
+
+  <section>
+    <h2>1. Menú responsive</h2>
+    <div class="menu-movil" id="menuMovil">
+      <a href="#">Home</a>
+      <a href="#">News</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+      <button id="botonMovil">☰</button>
+    </div>
+    <p>Reduce el tamaño de la ventana para probar el menú.</p>
+  </section>
+
+  <section>
+    <h2>2. Menú desplegable</h2>
+    <button id="botonDropdown">Dropdown</button>
+    <div class="opciones" id="opcionesDropdown">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Menú lateral</h2>
+    <button id="abrirLateral">☰ Open Sidebar</button>
+    <div class="sidebar" id="sidebar">
+      <button id="cerrarLateral">X</button>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <p>Presiona el botón para abrir el menú lateral.</p>
+  </section>
+
+  <section>
+    <h2>4. Acordeón</h2>
+    <button class="acordeon">Sección 1 +</button>
+    <div class="contenido">Esta es la información de la sección 1.</div>
+    <button class="acordeon">Sección 2 +</button>
+    <div class="contenido">Esta es la información de la sección 2.</div>
+    <button class="acordeon">Sección 3 +</button>
+    <div class="contenido">Esta es la información de la sección 3.</div>
+  </section>
+
+  <section>
+    <h2>5. Checkbox</h2>
+    <label><input type="checkbox" id="miCheckbox"> Marcar casilla</label>
+    <p id="mensajeCheckbox" class="oculto">Checkbox is CHECKED!</p>
+  </section>
+
+  <section>
+    <h2>6. Seleccionar sabor de helado</h2>
+    <label for="helado">Elija un sabor:</label>
+    <select id="helado">
+      <option value="">Seleccione</option>
+      <option value="Chocolate">Chocolate</option>
+      <option value="Vainilla">Vainilla</option>
+      <option value="Fresa">Fresa</option>
+    </select>
+    <p id="resultadoHelado"></p>
+  </section>
+
+  <section>
+    <h2>9. Cambio de color al hacer scroll</h2>
+    <p>El menú negro de abajo cambia de color cuando bajas por la página.</p>
+    <div class="barra-scroll" id="barraScroll">Menú de navegación</div>
+  </section>
+
+  <section>
+    <h2>10. Botón para volver arriba</h2>
+    <p>Desplázate hacia abajo y aparece el botón rojo «Top».</p>
+  </section>
+
+  <section>
+    <h2>11. Pantalla de carga</h2>
+    <p>Al abrir la página se muestra un círculo de carga durante 3 segundos.</p>
+  </section>
+
+  <section>
+    <h2>12. Lista de tareas</h2>
+    <div class="tareas">
+      <h3>Lista de tareas</h3>
+      <input type="text" id="nuevaTarea" placeholder="Título...">
+      <button id="agregarTarea">Add</button>
+      <ul id="listaTareas">
+        <li>Ir al gym</li>
+        <li>Ir al banco</li>
+      </ul>
+    </div>
+  </section>
+
+  <button id="botonTop">Top</button>
+  <div id="pantallaCarga"><div class="circulo"></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
